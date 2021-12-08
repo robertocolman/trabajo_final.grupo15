@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Blog ODS</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/pricing/">
+
+    
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet" >
+    
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="pricing.css" rel="stylesheet">
+  </head>
+  <body>
+    
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="check" viewBox="0 0 16 16">
+    <title>Check</title>
+    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+  </symbol>
+</svg>
+
+<div class="container py-3">
+  <header>
+    <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="me-2" viewBox="0 0 118 94" role="img"><title>Bootstrap</title><path fill-rule="evenodd" clip-rule="evenodd"> <img src=http://assets.stickpng.com/images/59b5bc666dbe923c39853e03.png height="50"></path></svg>
+        <span class="fs-4">' Organizacion De Las Naciones Unidas</span>
+      </a>
+
+      <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+        <a class="me-3 py-2 text-dark text-decoration-none" href="#">Registrarte</a>
+        <a class="py-2 text-dark text-decoration-none" href="#">Ingresá</a>
+      </nav>
+    </div>
+
+  {% block content %}
+
+  {% endblock %}
+
+   <footer class="pt-4 my-md-5 pt-md-5 border-top">
+    <div class="row">
+      <div class="col-12 col-md">
+        <img class="mb-2" img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAbFBMVEX///89ga0teqkgdaY5f6wqeagyfKomd6e8z94edKb7/f74+vy1ytvA0uA1fqvb5e3U4Oqqw9bt8vaTs8ybuM/l7PLH1+RJh7GsxNfp7/RrmrxTjLSKrciBqMXO3OdDhK93ocFml7ppmbwAbKHW3YmIAAAQt0lEQVR4nO1dZ5PiOhA8RxFNhl3CLtz7///x2Th1K9ki2VflqbovwILakqanZ0a6P38GG2ywwQYbbLDBBhtssMH+QVsslsvFoutRvM3254O42+95P+l6MK+33VlEsVdYHInLrusRvdbWx6CCV4AMjuuuR/VCW40TT7EkWHU9rpfZUaj4MhPHrkf2IjvFeoDpUj11PbaX2M0IMIV463p0L7CNbwboef656/E9bcvABtDzgn3XI3zW7Pg8L4y7HuGTtuI16osgENJL267H+JRNiSf836/Fer34OkS0Tqddj/Ih241W2+12cyAoX+W7IwQenlbb8+Wymf1DEflukwjfj1MjgIDgOw5xK8Zxkv4T4rLsbtAOtvsb4PgrgD/4oYXWxSbi9A9g3Opi0JTbJeLb6OOAcHzpZtitbXIyELzsT6YmnowPvfY8k4MhRAuV8OymWcn5R5M+y6qTdoVmM6Ow3tYYroZhf2fxbBy1/yV/9sscrya9lRzkIGM/JYxqJapzuIrxs8wsUV+18aneWr5/Hu1H56SMXpKr/OFLtaD96PI1m20Pov7znsY5P3WkMi6nbO4VcxPI2bUSeyjKCdvbprwXVk1hKCB8OcbaMZeLNPytPef0UM2r+NCYnaxWggFlCm/5sINvfLEMycMY1+OkXuWzj4zZzY7lBEQjer3SF7hOy/kWLIB35VMKe+hOq8F5B+mdgvnia/3STBiAXEqXGvRPaVS+UaG+RQHnt36pFMaxvBh3pQOKexefrseVk1Cefjm79SslQvWzlT8e940wzpUbDJSwMrxvujCsXyk9qcp7XumQ+0YYIBWEAaGX1K+YEVYJjtB/74hdDeLoSBGxxcqDIZcIhVyBgifVM8KAxIuyvJaREaHiafYQj//+6ZFhGK0yQLFFI/XzocwsZ5Bf4udPfywBOSsH2ZXigEiseiKRNImY3FBVc3c2Q60neB9O6zfqF+s5l/iCBFjQnzrxLwxLWqS7MLQi9II5fR4UWI9Yf445bIpKJxuYk6B+HZP9wRVj8hEuh97IxBOld+GNpUDlbkDoJWPcjD5OYk9Y/wdz9D4mIDzKp+Eq5SQNYOcMFbjfLo3ygriwRlSBsSCM4bFMx/BGP1if80+Y2qa6jHmVZilS+KsLTmIvWP+IOVJU8nupBQMQyqlEdE8L/DPRgxLxDldVgv0jJymrDckoGSHFNuS4esD6F5xCZHulvGRBSH+4x+3bvdZf4xQS21/lDD84IQUhTT690TnrUyI/gvjkeyyB8AQgVNL/uIHp3XHHdRoqkpFLVGsYVoTohCfoa7pmfeJnZHtNfRBW6Uwt4WBS/Ex7+4NwNCZMg1yppSU7QmT9b3w8atnqk4bK10s28I6mlA8pKg1CDxJVzLGQo/u8EQ5Mso001cEGhBGQ+7IvrE/Kl7T9QR5/izk8Gf6+yww/AwBu/tH1zDYgJLlPz6471iflS09a24aACHUlbpL0viXz8zk7IA7cLTttK4loQEjKa9sH1ueliDrnom3JAIQ6R8TkTjIxRi/9QSPtgFp1rQRs7RBSBuTSPeuTdqAqg6GjS9Shpx6h548MXx93wvrEyhQ9mg4fNCI0ysROWJ+9CToJNaxui9AsE6MOWJ/2CaVn6mefxBj0QKFpXiIMY19EfvVISCbiHHbA+mueQsi/lywZit/L5nwbV9OlQeiH2/1yOT9XeVWM/Fbdsj7JP116xi+aYaerKDEhrPqiJ5figWH0PsGH+HHWZ/mH26cImkU91GlxakZB6MPMj4ovRF44d8n6FHLQJsldrCBlnjcNAcJ7IZQLwKt8cSMvkEz8MOtTnoHSM7mLldbUNNIg9KUGxJId4KVjd6wvKXh4J89YC6lodFfKoB0yhHJNomAHjG8pLvws62PkTz+d70+l8LcWEsJIUxzMnxrlgFlmvhiEzVga4PLJ96c/kv/CUxEqRZdj/tiQeeiHorn8F+8ziqcoYMtXWqT0GGSCERD+RJrPFCUZlonwQx9kfa6aIUkXz1wd/VFB6CtxWJkkN8rEz7E+7Q565OVrygo8eDJCNdNbfi3mFUmIfYz1uWqG26YMlhUvcg9PGKGy5qo4kFLnVP1QW+beYyRryPWV7yjHJu9aghEqa65WlZFJJiafYX0+94qNSzAa6W/u7SgSQqkfCgIYml56nko//FvsL3lSHGa1ouQIKw8wJYTUNFy1g+dAYHopoRd/4iAGFz5xQdX1NO5a/7MpgvE6Ps+b+XzcrqRVrvBGQpviLZjYaOvThqukAPu8xa1sCJYRemPQJJQYGJtk4gdYnwuf+noaLrLpKSjnIFIQIm8Sx+Iy5xLl+1mfC5+48yty5lq3trVWg5DTV0aZGLz7kCklatl7V9E4qgOUeIgwx4P5JUaI6dfdR7X+xrhd6iAZs9/4/F0Q0pdQFeTNWp9SJ/w8qw5MfPw05YCw6ArC2FQqdSDPkkx8M+tvWTaBR6lCOXKv3IZXD7oZIcVK2L/6ZtaPjIOoVpJGTJkRgu9X+otMMlHOfrzUuNEHPUrdjIYJDP68G0JKMtMmfSfrc90TnUEdsOHAeMxuCM0y8Y2sz8qX6mnV+MYQsM25v9QRoW+SiW9kfdrw5FE22oBNak50ROgZZaJ4F+uz8kWPUqdPMWBbShQH7NcKIa5GlonvuiOMpwS3SRUca7LfWoS7NgjNMnHM2uVVxlNCHiXWBWxKu4IrQotMfM/9WdxBgo+x9kDUriAXSp0R0qam9ivxDtZn5Utbocq9UcCmDNkZoVkmvoX1ueUXRcxPc8CWD8uKUNe/Qe0nJBPfcEMY7yp9A5Q5YGuBUDeH1OFBqz5S6gZPG++qSOtRAmPA9uAcmmXi61lfbgLSYbcEbDLC75YIKZVHru7lrL+hXYhtuzV2zEjP1UWqQwhrzdBHhe0nJBNfzPp8sxwVN7dtAjZ5xlojJCAsE1/L+uwY9Q1QtoBNRrhui9B8SuHFrM8D1jZAWQO2xxEmRpkoV9KfshVPoaaeJgVsesdoQzgxIKSkBeXBXsr63Hiva4AyZ9j0CIPWCLFLYP0u1ueyffIX3qo8ij1gewIhJS0osHoh6/MvahqgpOjDcBWbFaFpH1pOKbyO9Znb9B7FtwdsjghDbGrU1mCVZ/2UUcO6pgEqs4aArRkh5JpDkVw351tQfg2mZakx9VWsL52dwG1xbhuwyXimqi+tEEZFU+NkVVzgRr6bT+m8hvU5PIm19TRLhs0VIdxFvy5uNxub8oqvYX3psKvQ1dMaA7b2CCPqXss3iFEmvubSBQ5PYm09rTFgUxCa9qFUPMv3K59SeDXrS/kkTQNUm4CtNUJ5UtQ+ud2rWZ+TF3TuuAr1mw8EtUWo1D/z8M58pkrtEXQ1SflSA1S1HK0ZNieEsTLg/DEaZaJy/Z2zcYSpJ98WAVtbhOotWnlLJs0tfemzrC8NWNsA1SZgewJhca8k7H+Sic+yvjRgfQNUiwNBOZ56rk0IfaVwVuRiyYcbOwfdjRvWaVuv9QGbZQoR4cS0D2UKrxYRtp9sjMd1nI0b1rme1qIkKlncjFBpb69GEGuTX/ITdjZWvkivE7eArTVCua+2HoG24qz7ExeTzrJqLxSw3tdiRPjHqC3G5GuAGYRRJj5xwSIPkBpZqoZBrR5+AiG3dS3rRWGWiY+zvnTN01h3oQBFG3+NAZsDwvoe6T/MVug0+fziw6zPxzn0Fwro9fBTCGmhwhjIpdGRlkcvWJSueUKlDaIY/sASsDkhRAmKMZWx/eTRq5bYbRgaoPBAkDGX5IgQfwqdnW+68+xB1pfchl4/qAeCXoAQLwXbwSjMMvGxCxZv5gaoup6G7tXKhU4I0T/TcWdT+8lDrC8lLwwNUNr+0jYILZkoXo4oqM0y8RHWZ+Wrr9CTew2tbC8jtM4hRhHG487kCB/Q+tJNXfoKPf7g+uoFkW8lxNZziNub3IFZJrpfsCjVVrQJXzmrPv1ZXUMLzNZzSCeEeb+ZZKIz60vKV68ftNFSBtMwm+0R4idPpv3G0s6V9aW7O1A/1Jc5mI8e62G2X6WY8GISQnVFMtFR60vKV5/wpUN0Bpi/CNO3IeTKDJQO9samVjrM7tjNJ18RCx4FWCQwf0ENc/l1KWEinoYqN1xlw9dT0H6j1GzipPV9DtgM9z22Vi0ZzMNYBDaEXCHFfA11YNB+47CrzQMvTbpbJTKcgfESlw7B6XIFoUoDQgyW2K1TBZrUjwthyDd1wVv0c+Hh4fMrTb0YsGyk540VtdmDR70lkWBJ+IbB9cH/lzFqQAgFtR27PWIu46Fyu+2lFnt4S7nvMYlFcNvuneeyCSGeapN+U1vfk7/NbpYGKN1/3ZjdExR4F7fJbEKIvypdZmvMK7Y+EfXN46cLui3/G5zbZPoNCFEFywvHlFcM0QnZjOv2JC5/7ammMI6C33aT2YQQff9CSuEFBsII2x4X+uHtC0Hw9HISwteuVHgkcSRu258GSdqIENNCY/x2ERyQFpAt2zIiIVRc8G60uUVBFCc2nPfJPM8s2ZNYQSgl6nC33dkrvIO7fC2ZhNFptEZI195oC+Xf++1dJ1kzM7EvxNE0meocSggxFt4GvghO59lCE2Hgf0zTmhAx3LN44CIWs67aJJ3Mw3mkTmbjHKJq323nxr09rxG2PyKMPU2N1xQvZudbkMK0+KB0Mv3rimufjQjbdgNBkNU+WYO+q12ydTffHmNrEiPxxfgE8a0dYeJHQdyqfI3KQ70Vx2i4Eduff1/f9aCIjavWB0Y2Ioz9jHFWy3bpwSn23DkcEOazG06tANPl7GyilMSOsHKWrXOfixX+jIvK51ypuM5dk+Z6SrEj/M/gLPW23m+PkeDTXi7XY3LJIt1Dwunnc8soxUNKIYShjLC1ZdmRWETKKnH670zU//ncfQkVw8koJfW12Ww+j3CS50S04YbjveaGQlnmBrzrylksLdJVK0TwFMKUlu6PSjswSfu3McP33L8rZXH/uJ27dq9+z8GbJy4I022deq/YFkGFkWttZhfY4+ski8luG0200s7aIkw9yl+RL3Krjd2bvxYNEO8PLlu1mQ96C8K7RwmapEwB8BGXtRBtvvpRH9SAcJF6lHGDgEGAj92ysD41VgRrS1XhOA1FmmRhC4S70fk0tm865bcfvm1wG9g1vWxZOBleVz8tXG1ebZQa9dJNd2uW2PKPji9PHOxenwO3n7sfBkljjeN2b3e1KsL2mw5/zR8fn7wucjq7tXFlKkw/8G9bc7hXKGA8Jev6I1modVu95E6l5b1U5vp489vIM0bRPOS5irCh3Ygt9W7RcfXSo8AFLzns/xKmNqotnlbzSWfNF6bL4/diywE9YXc311CsN4zqziglca5PiYLQfDqPn9ZDGXYnmyzvLsF102SWwTxtZrNrFUw4rNIUXRBfvz51C+33fHPKkhbuMLNzd1CBhDk0I7xP3Wkz//h/xfL4ZDogzKZOSWN90u6T6c4m7RBmAUQ6de+5bcfJll/XxJ2s7QiLDORHrpxtZ+v95hYIW9ZUi7DW5TVCYxa5B5YqArfQQEGY/Y8lxkpATyyPnltKA+iBmIzvU/cmJn+5LWb3hFHjZCLCU8+nTrXpz/bYFOc55OH7ammcdzDXM+Lxv48wsyzO8+XQIKuhepfRP7YubZaHBmnEFibJXdi9O37uxpbby/V4vG4+Fj8PNthggw022GCDDTbYYIMNNthggw022GCDDTbYYP+O/Q9Hx+KXD+RcTAAAAABJRU5ErkJggg==" width="50" height="50" alt="" width="24" height="19">
+        <small class="d-block mb-3 text-muted">&copy; 2021</small>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Contacto</h5>
+        <ul class="list-unstyled text-small">
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Informatorio</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Whatsapp</a></li>
+
+        </ul>
+      </div>
+      
+
+    
+  </body>
+</html>
