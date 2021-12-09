@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>
+		
+	</title>
+</head>
+<body>
+	<div class="container">
+		<div class="row"> 
+			<div class="col-12.col-md-6.offset-md-3">
+
+				<div class="card">
+					<div class="card-body"></div>
+						<h2>ingresa tus credenciales</h2>
+						<hr>
+						<form action="" method="post">
+							{% csrf_token %}
+							{{ form }}
+
+						<input type="submit" name="ingresar">
+						</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
