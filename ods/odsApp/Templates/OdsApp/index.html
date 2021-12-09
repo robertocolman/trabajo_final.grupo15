@@ -2,6 +2,16 @@
 
 {% block content %}
   
+    {% if messages %}
+      {% for message in messages %}
+
+         {{ message }}
+
+      {% endfor %}
+    
+
+    {% endif %}
+
     <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
       <h1 class="display-4 fw-normal">Objetivos de Desarrollo Sostenible</h1>
       <p class="fs-5 text-muted">En éste espacio se hará la difusión, visibilización y debate sobre iniciativas que contribuyan al cumplimiento de los 17 Objetivos de Desarrollo Sostenible incluidos en la Agenda 2030 de la ONU.</p>

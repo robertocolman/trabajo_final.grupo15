@@ -53,14 +53,20 @@
         <span class="fs-4">' Organizacion De Las Naciones Unidas</span>
       </a>
 
-      <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+      <nav class=" mt-2 mt-md-0 ms-md-auto">
         {% if user.is_authenticated %}
           <li>
-            <a href="{% url 'logout'}">Cerrar Sesión</a>
+            <a href="{% url 'logout' %}">Cerrar Sesión</a>
+          </li>
+          <li>
+            <a href="#">@{{ user.username}}</a>
           </li>
         {% else %}
           <li>
             <a href="{% url 'login' %}">Iniciar Sesión</a>
+          </li>
+          <li>
+            <a href="{% url 'registro' %}">registrate</a>
           </li>
         
         {% endif %}
