@@ -2,12 +2,14 @@ from django.shortcuts import render, redirect
 from .forms import CustomUserCreationForms
 from django.contrib.auth import authenticate, login
 from django.contrib import messages
+from .models import Post
 
 def home(request):
 	return render(request, "odsApp/index.html")
 
 def objetivo1(request):
-	return render(request, "odsApp/objetivos/objetivo1.html")
+	post = Post.objects.filter(estado = True)
+	return render(request, "odsApp/objetivos/objetivo1.html", {'posts': post})
 
 def objetivo2(request):
 	return render(request, "odsApp/objetivos/objetivo2.html")
