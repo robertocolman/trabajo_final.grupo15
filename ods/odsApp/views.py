@@ -5,7 +5,7 @@ from django.contrib import messages
 from .models import Post
 from django.contrib.auth.models import Group
 from django.views.generic import ListView, CreateView
-
+from django.urls import reverse_lazy
 
 
 def home(request):
@@ -92,6 +92,9 @@ class NuevoAdmin(CreateView):
 	template_name = "odsApp/admin/nuevo.html"
 	model = Post
 	form_class = PostForm
+
+	def get_success_url(self, **kwargs):
+		return reverse_lazy("home")
 
 
 

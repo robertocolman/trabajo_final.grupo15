@@ -4,47 +4,50 @@
 
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<title>Objetivo 1: Fin de la pobreza</title>
-</head>
-<body>
-	<div class="container">
-		<div class="row">
-			<div class = "col-log-8 col-md-10 mx-auto">
-				{% if posts %}
-					{% for post in posts %}
-						<div class="post-preview">
-							
-								<h2 class="post-title">
-									{{ post.titulo }}
-								</h2>
-							<h3 class="post-subtitle">
-								{{ post.descripcion }}
-							</h3>
-							{{post.contenido }}
-						
-						<p class="post-meta">Escrito por 
-						<a href="#">{{ post.autor }} </a>el
-					{{ post.fecha_creacion }}</p>
-					</div>
-				</div>
-			</div>
-		</div>
+	&nbsp;
+	<head>
+		<meta charset="utf-8">
+			<title>Objetivo 2: Fin de la pobreza</title>
+				</head>
+					<body>
+						<div class="container">
+							<div class="row">
+								<div class = "col-log-8 col-md-10 mx-auto">
+									{% if posts %}
+										<center>{% for post in posts %}</center>
+											<div class="post-preview">
+												
+													<center><h2 class="post-title">
+														{{ post.titulo }}
+													</h2></div></center>
+												<center><h3 class="post-subtitle">
+													{{ post.descripcion }}
+												</h3></center>
+												<center>{{post.contenido }}</center>
+											
+											<center><p class="post-meta">Escrito por 
+											<a href="#">{{ post.autor }} </a>el
+										{{ post.fecha_creacion }}</p></center>
+										
+										</div>
+									</div>
+								</div>
+							</div>
 		<hr>
 			{% endfor %}
 		{% else %}
 			<h1>No hay post registrados</h1>
 		{% endif %}
-	{% if user.is_authenticated %}
-	<h1><p class="post-meta"> <a href="http://127.0.0.1:8000/admin/odsApp/post/add/">Crear Post</p></a></h1>
+			{% if user.is_authenticated %}
+		<center><h1><p class="post-meta"> <a href="{% url 'Admin_Nuevo' %}">Crear Post</p></a></h1></center>
+	
 	{% else %}
 	<h1><a href="{% url 'login' %}">Logeate para crear una publicación</h1></a>
 
 	{% endif %}
-
-
+	<center><head><h1><a href="{% url 'Admin_Listar' %}">Mis publicaciones</a></h1></head></center>
 		
+
 	
 </body>
 </html>

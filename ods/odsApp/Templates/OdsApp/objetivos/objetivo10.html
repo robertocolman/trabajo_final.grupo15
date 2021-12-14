@@ -13,7 +13,8 @@
 		<div class="row">
 			<div class = "col-log-8 col-md-10 mx-auto">
 				{% if posts %}
-					{% for post in posts %}
+					<div style="tex-align: center">
+						{% for post in posts %}
 						<div class="post-preview">
 							
 								<h2 class="post-title">
@@ -27,6 +28,7 @@
 						<p class="post-meta">Escrito por 
 						<a href="#">{{ post.autor }} </a>el
 					{{ post.fecha_creacion }}</p>
+						</div>
 					</div>
 				</div>
 			</div>

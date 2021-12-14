@@ -2,10 +2,11 @@
 
 {% block content %}
 	<form method="POST">{% csrf_token %}
-	{{form.as_p}}
+		{{form.as_p}}
+		
 		<div class="row">
 			<div class="col">
-				<button type="button" class="btn btn-success">Guardar</button>
+				<button type="submit" class="btn btn-success">Guardar</button>
 				<a href="{% url 'Admin_Listar' %}">Cancelar</a>
 			</div>
 		</div>	 
