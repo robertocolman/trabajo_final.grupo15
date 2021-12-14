@@ -41,7 +41,7 @@ class Post(models.Model):
 	descripcion = models.CharField('descripcion', max_length= 100, blank= False, null= False)
 	contenido = models.TextField()
 	imagen = models.URLField( max_length= 255, blank= True, null= True)
-	autor = models.ForeignKey(Autor, on_delete = models.CASCADE)
+	autor = models.ForeignKey(User, on_delete = models.CASCADE)
 	categoria = models.ForeignKey(Categoria, on_delete = models.CASCADE)
 	estado = models.BooleanField('publicado/no Publicado', default = True)
 	fecha_creacion = models.DateField('fecha de creación', auto_now = False, auto_now_add = True)
@@ -52,3 +52,5 @@ class Post(models.Model):
 
 	def __str__(self):
 		return self.titulo
+
+	#vistas genérica para crear un modelo. es el createviews

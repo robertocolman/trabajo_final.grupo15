@@ -26,7 +26,8 @@ urlpatterns = [
 	path('objetivo17', views.objetivo17, name="objetivo17"),
 	path('leermas', views.leermas, name="leermas"),
 	path('registro', registro, name="registro"),
-
+	path("Admin/Listar/", views.ListarAdmin.as_view(), name="Admin_Listar"),
+	path("Admin/Nuevo/", views.NuevoAdmin.as_view(), name="Admin_Nuevo"),
 
 	
 ]

@@ -1,8 +1,12 @@
 from django.shortcuts import render, redirect
-from .forms import CustomUserCreationForms
+from .forms import CustomUserCreationForms, PostForm
 from django.contrib.auth import authenticate, login
 from django.contrib import messages
 from .models import Post
+from django.contrib.auth.models import Group
+from django.views.generic import ListView, CreateView
+
+
 
 def home(request):
 	return render(request, "odsApp/index.html")
@@ -72,8 +76,27 @@ def registro(request):
 		if formulario.is_valid():
 			formulario.save()
 			user = authenticate(username=formulario.cleaned_data["username"], password=formulario.cleaned_data["password1"])
+			my_group = Group.objects.get(name='UsuarioLogeado') 
+			my_group.user_set.add(user)
 			login(request, user)
 			messages.success(request, "te has registrado correctamente")
 			return redirect(to="home")
 		data["form"] = formulario
 	return render(request, "registration/registro.html", data)
+
+class ListarAdmin(ListView):
+	template_name = "odsApp/admin/listar.html"
+	model = Post
+
+class NuevoAdmin(CreateView):
+	template_name = "odsApp/admin/nuevo.html"
+	model = Post
+	form_class = PostForm
+
+
+
+'''
+class NuevoPost(CreateView):
+	template_name = "odsApp/admin/Post"
+	model = Post
+'''

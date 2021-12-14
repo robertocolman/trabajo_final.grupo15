@@ -1,0 +1,12 @@
+{% extends "odsApp/base.html" %}
+
+{% block content %}
+
+{% if user.is_authenticated %}
+<a href="{% url 'Admin_Nuevo' %}">Nueva Publicacion</a>
+{% else %}
+	<h1><a href="{% url 'login' %}">Logeate para crear una publicación</h1></a>
+
+	{% endif %} 
+
+{% endblock %}

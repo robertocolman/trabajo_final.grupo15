@@ -4,6 +4,7 @@
 
 <!DOCTYPE html>
 <html>
+	<head><h1><a href="{% url 'Admin_Listar' %}">Mis publicaciones</a></h1></head>
 <head>
 	<meta charset="utf-8">
 	<title>Objetivo 1: Fin de la pobreza</title>
@@ -37,7 +38,8 @@
 			<h1>No hay post registrados</h1>
 		{% endif %}
 	{% if user.is_authenticated %}
-	<h1><p class="post-meta"> <a href="http://127.0.0.1:8000/admin/odsApp/post/add/">Crear Post</p></a></h1>
+		<h1><p class="post-meta"> <a href="{% url 'Admin_Nuevo' %}">Crear Post</p></a></h1>
+	
 	{% else %}
 	<h1><a href="{% url 'login' %}">Logeate para crear una publicación</h1></a>
 
